@@ -10,8 +10,11 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("hello world");
 });
+
 app.use("/employees", employee);
-// setting port 3000
-app.listen(5000, () => {
-  console.log("App is running on http://localhost:5000");
+
+const PORT = process.env.PORT || 5000;
+// 設定應用程式監聽的埠號
+app.listen(PORT, () => {
+  console.log(`App is running on http://localhost:${PORT}`);
 });
