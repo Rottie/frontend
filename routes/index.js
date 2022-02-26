@@ -1,0 +1,5 @@
+const express = require("express");
+const router = express.Router();
+const employee = require("./modules/employee");
+router.use("/", employee);
+module.exports = router;
