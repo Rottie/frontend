@@ -16,5 +16,5 @@ app.use("/employees", employee);
 const PORT = process.env.PORT || 5000;
 // 設定應用程式監聽的埠號
 app.listen(PORT, () => {
-  console.log(`App is running on http://localhost:${PORT}`);
+  console.log(`App is runnsing on http://localhost:${PORT}`);
 });
