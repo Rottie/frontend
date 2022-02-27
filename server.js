@@ -10,7 +10,7 @@ app.use(express.json());
 
 // settting main page route
 app.get("/", (req, res) => {
-  res.send("hello world");
+  res.send("helsslo world");
 });
 
 app.use("/employees", employee);
