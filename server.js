@@ -1,5 +1,5 @@
 const express = require("express");
-const cors = require("cors");
+
 const app = express();
 
 const employee = require("./routes/modules/employee.js");
@@ -8,7 +8,7 @@ const employee = require("./routes/modules/employee.js");
 require("./config/mongoose");
 
 const PORT = process.env.PORT || 5000;
-app.use(cors());
+
 app.use(express.json());
 
 // settting main page route
