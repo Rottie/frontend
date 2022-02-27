@@ -1,6 +1,9 @@
 const mongoose = require("mongoose");
 
-const URI = process.env.MONGODB_URI || "mongodb://localhost/api";
+const URI =
+  "mongodb+srv://root:4ph9XhkXMG9CTfRl@cluster0.lizib.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+
+//  "mongodb://localhost/api"
 
 mongoose.connect(URI, {
   useNewUrlParser: true,
@@ -13,5 +16,5 @@ db.on("error", () => {
 });
 
 db.once("open", () => {
-  console.log("Local DB connected!");
+  console.log("Atlas DB connected!");
 });
