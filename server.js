@@ -8,8 +8,9 @@ const employee = require("./routes/modules/employee.js");
 require("./config/mongoose");
 
 const PORT = process.env.PORT || 5000;
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
+
 // settting main page route
 app.get("/", (req, res) => {
   res.send("helso world");
